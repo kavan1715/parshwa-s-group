@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management System - Login</title>
+  <style>
+    body{
+    margin:0;
+    padding:0;
+  background-color: #EEEDED;
+}
+
+.side{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+h1{
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+nav ul{
+    display: flex;
+    gap :20px;
+    list-style-type: none;
+}
+
+header{
+  padding:8px 8px;
+  background-color: #884A39;
+
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #9a5846;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    padding: 20px;
+}
+h3{
+    text-align: center;
+}
+/* more styles added to beautify the input fields */
+input {
+  margin: 0.25em 0em 1em 0em;
+  outline: none;
+  padding: 0.5em;
+  border: none;
+  background-color: #BA704F;
+  border-radius: 0.25em;
+  color:white;
+  font-size: medium;
+
+}
+label{
+    color:black;
+    font-size: medium;
+}
+/* styles for button */
+button {
+  padding: 0.75em;
+  border: none;
+  outline: none;
+  background-color: #7b4637;
+  color: white;
+  border-radius: 0.25em;
+}
+
+/* hover functionality for button */
+button:hover {
+  cursor: pointer;
+  background-color: #c58364;
+}
+  </style>
+</head>
+<body>
+    <header>
+        <div class="side">
+            <div>
+                <img src="logo.png" width="60px" height="70px">
+            </div>
+            <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+            </nav>
+        </div>
+        </header>
+
+        <form>
+            <!-- class named "container" is assigned to div -->
+            <div class="container">
+             
+              <h3>Login</h3>
+        <label>Username:</label>
+        <input type="text" placeholder="Enter username" name="username" required>
+
+        <label for="pwd">Password:</label>
+        <input type="password" placeholder="Enter Password" name="pwd"  required>
+    
+    
+      
+              <button type="submit">Register</button>
+            </div>
+          </form>
+</body>
+</html>

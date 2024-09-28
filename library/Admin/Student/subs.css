@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEEDED;
+}
+
+.side {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-right: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+header {
+    padding: 8px 8px;
+    background-color: #0A6847;
+    display: flex;
+    flex-direction: column;
+}
+
+header p {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+li a:hover {
+    background-color: #7ABA78;
+}
+
+/* Add style for benefits section */
+.benefits {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefits h2 {
+    font-size: 24px;
+    color: #0A6847;
+    margin-bottom: 10px;
+}
+
+.benefits ul {
+    padding-left: 20px;
+}
+
+.benefits li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Style for the button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-51 {
+    background-color: transparent;
+    border: 2px solid black;
+    color: white;
+    font-family: "Avenir Next LT W01 Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 16px 23px;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-51:hover,
+.button-51:active {
+    outline: 0;
+}
+
+.button-51:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button-51:before {
+    background-color: #0A6847;
+    content: "";
+    height: calc(100% + 3px);
+    position: absolute;
+    right: -7px;
+    top: -9px;
+    transition: background-color 300ms ease-in;
+    width: 100%;
+    z-index: -1;
+}
+
+.button-51:hover:before {
+    background-color: #7ABA78;
+}
+
+@media (min-width: 768px) {
+    .button-51 {
+        padding: 16px 32px;
+    }
+}
+
+/* Style for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Style for the modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+ /* Center modal content */
+ @media screen and (max-height: 500px) {
+    .modal-content {
+        margin: 10% auto;
+    }
+}
+/* for */
+form{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.container{
+display: flex;
+flex-direction: column;
+width: 25vw;
+padding: 20px;
+}
+h3{
+text-align: center;
+}
+/* more styles added to beautify the input fields */
+input {
+margin: 0.25em 0em 1em 0em;
+outline: none;
+padding: 0.5em;
+border: none;
+background-color: #7ABA78 ;
+border-radius: 0.25em;
+color:black;
+font-size: medium;
+
+}
+input::placeholder{
+color:white;
+}
+label{
+color:black;
+font-size: medium;
+}
+
+/* styles for button */
+button {
+padding: 0.75em;
+border: none;
+outline: none;
+background-color: #0A6847;
+color: white;
+border-radius: 0.25em;
+}
+
+/* hover functionality for button */
+button:hover {
+cursor: pointer;
+background-color: #7ABA78;
+}

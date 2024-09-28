@@ -1,0 +1,124 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEEDED;
+}
+.side {
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+header {
+    padding: 8px 8px;
+    background-color: #1679AB;
+    display: flex;
+    flex-direction: column;
+}
+header p {
+    margin: 0;
+    font-family: sans-serif;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+li a:hover {
+    background-color: #074173;
+}
+.user {
+    display: block;
+    color: white;
+    background-color: #074173;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.sidenav {
+    height: 100%;
+    margin-top: 110px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1679AB;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: black;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.card {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    color: #555;
+}
+
+.card .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card .button:hover {
+    background: #0056b3;
+}
